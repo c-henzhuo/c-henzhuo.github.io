@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul {
+			list-style: none;
+		}
+		
+		span {
+			display: block;
+			text-align: center;
+			width: 100px;
+			background-color: cyan; 
+			border-color: silver;
+			border:1px solid silver;
+		}
+		.div{
+			width: 100px;
+			height: 70px;
+			border:1px solid silver;
+			display: none;
+			text-align: center;
+		}
+	</style>
+	<script src = "https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script>
+		$(function(){
+			//思路分析：
+			// 给所有的span标签注册鼠标点击事件
+			$("span").click(function(){
+				// next（）：选择this的下一个标签
+				// parent（）：选择调用标签的的父标签
+				// siblings（）：选择调用该标签的兄弟（同级标签）
+				// children（）：选择调用该标签的子标签（括号里可以指定是哪一个标签）
+				// show（）：显示选择的标签
+				// hide（）：隐藏选中的标签
+				$(this).next().show(1000).parent().siblings().children("div").hide(1000);
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<ul>
+		<li>
+			<span class="span">按键一</span>
+			<div class="div">弹出div一</div>
+		</li>
+		<li>
+			<span class="">按键二</span>
+			<div class="div">弹出div二</div>
+		</li>
+		<li>
+			<span class="">案件三</span>
+			<div class="div">弹出div三</div>
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淘宝案例</title>
+	<style>
+		* {
+			padding: 0;
+			
+			margin: 0;
+			font-size: 24px;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.wrapper {
+			width: 596px;
+			height: 496px;
+			margin: 100px auto 0;
+			border:1px solid pink;
+			overflow: hidden;
+		}
+
+		#left li,#right li {
+			background-color: white;
+			/*background: url(images/2.jpg) repeat-x;*/
+		}
+
+		#left,#center,#right {
+			float: left;
+		}
+		
+		#left li a,#right li a {
+			display: block;
+			width: 96px;
+			height: 54px;
+			border-bottom: 1px solid pink;
+			line-height: 54px;
+			text-align: center;
+			color: black;
+		}
+		
+		/*a:hvoer是一个CSS伪类，用于鼠标移到a的时候的样式*/
+		#left li a:hover,#right li a:hover {
+			background-image: url(images/3.jpg);
+		}
+
+		#center {
+			border-left: 1px solid pink;
+			border-right: 1px solid pink;
+		}
+	</style>
+	<script src = "https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script>
+		$(function() {
+
+			$("#left>li").mouseenter(function() {
+
+				// index():返回的是当前元素所有相同兄弟元素的索引
+				var idx = $(this).index();
+				$("#center>li").eq(idx).show().siblings().hide();
+			});
+
+			$("#right>li").mouseenter(function() {
+				var idx = $(this).index()+9;
+				$("#center>li").eq(idx).show().siblings().hide();
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<ul id = "left">
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+		</ul>
+		<ul id="center">
+			<li><a href="#"><img src="http://a3.qpic.cn/psb?/V144aDsa3Ypq9d/Wo8uM4PQaXshYdvJFdXBQSsD7fhUDlvTlUpgHZtumo4!/b/dOkAAAAAAAAA&bo=9AF4A*QBeAMRCT4!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a3.qpic.cn/psb?/V144aDsa3Ypq9d/jpXIMoNRRhrmv.0UEC.x6pC7A4bq4B09A5rleCAFIhA!/b/dD0BAAAAAAAA&bo=AAQAAwAEAAMRADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a3.qpic.cn/psb?/V144aDsa3Ypq9d/6lSQwRiiide5h.ORKjUujGz4N9oUMe1GXOgJXSIwWpU!/b/dIUBAAAAAAAA&bo=XgHpAF4B6QARADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a3.qpic.cn/psb?/V144aDsa3Ypq9d/H2.7BdnEQad2ntz1n7FNoBb1iyqv*mcZ5ZbY8Ig8px8!/b/dG4AAAAAAAAA&bo=7AImAuwCJgIRADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a3.qpic.cn/psb?/V144aDsa3Ypq9d/ww2jegxeUADGUHYHNtvgrL4zxsfWFlHbMPdUEsGRGwg!/b/dIUBAAAAAAAA&bo=vAJbBLwCWwQRADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a3.qpic.cn/psb?/V144aDsa3Ypq9d/Vd7Zbgb5IUUcPGsZNiN0qAK2p9XnPepuiv9yBSGZlbU!/b/dHYBAAAAAAAA&bo=WAQ4BLAEjQQRAGo!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a1.qpic.cn/psb?/V144aDsa3Ypq9d/e0tJa75wdrroAt7eePA1CgI1KmLjW7J3kOAmqcg*pb0!/b/dBcBAAAAAAAA&bo=vAJbAQAAAAARANM!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a2.qpic.cn/psb?/V144aDsa3Ypq9d/YZT4p2YCduWYjzI9KRtZ2OLWYTCa1XRuO6EgCw*kM6Q!/b/dCsAAAAAAAAA&bo=vAK8ArwCvAIRADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a2.qpic.cn/psb?/V144aDsa3Ypq9d/q1R1JSs2i5I49g6SJj4ZJ2L9RhZl8y7sU8co1qPgtws!/b/dOsAAAAAAAAA&bo=OASAB7AEVQgRAGU!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a2.qpic.cn/psb?/V144aDsa3Ypq9d/y6.7RX1*juRmfUY8wJpGV9tDDifsx2Fq1eyAnyHHCPA!/b/dGwBAAAAAAAA&bo=kAGQAZABkAERADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a3.qpic.cn/psb?/V144aDsa3Ypq9d/CT51.t63V9Wstmtr84y3bv3cTUL.OZA3om01H2bJmtM!/b/dA0BAAAAAAAA&bo=VAY4BFgH5QQRAOc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a1.qpic.cn/psb?/V144aDsa3Ypq9d/YAZpYLLIyj5moOQxA16A*fLEgGyKDycGikVlcbfOhAs!/b/dN4AAAAAAAAA&bo=WAJNAwAAAAAFADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a2.qpic.cn/psb?/V144aDsa3Ypq9d/0P.Kb9ScUUegx42NejatOp3Wm288Sz0H*mJdFnKbB0U!/b/dDwBAAAAAAAA&bo=PwI*Aj8CPwIRADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a2.qpic.cn/psb?/V144aDsa3Ypq9d/457HIM4peATwlJFpVDgWk9twp55xh.4PFAKB1jMzs8M!/b/dGwBAAAAAAAA&bo=WAJ.AVgCfgERADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a3.qpic.cn/psb?/V144aDsa3Ypq9d/GSZQR.iA4v32wUnqHHzSQJwr93h52sdrPiN.KIajenI!/b/dIUBAAAAAAAA&bo=6APDAugDwwIRADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a3.qpic.cn/psb?/V144aDsa3Ypq9d/53iXYPghMx*YTWHA2zveQKdAgjL6qLyc1uSjM3*lSWo!/b/dG4AAAAAAAAA&bo=6APDAugDwwIRADc!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a2.qpic.cn/psb?/V144aDsa3Ypq9d/2vkN.GkSxTtsimXxTU695okY*QNxEqYcP.gEOsMw2.M!/c/dDwBAAAAAAAA&bo=9AHuAvQB7gICEDQ!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+			<li><a href="#"><img src="http://a2.qpic.cn/psb?/V144aDsa3Ypq9d/t.SiXB6UtUHDp4*hY*ut.u3th*ONXH4lgJYN*VDBXeA!/b/dD8BAAAAAAAA&bo=sgLpAQAAAAARAG8!&rf=viewer_4" width = "400" height = "500" alt=""></a></li>
+		</ul>
+		<ul id="right">
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">淘宝</a></li>
+		</ul>
+	</div>
+</body>
+</html>
+
+

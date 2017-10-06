@@ -1,0 +1,16 @@
+.f-left {
+	float: left;
+}
+
+.f-right {
+	float: right;
+}
+
+.text {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	cursor: default;
+	font-family: 微软雅黑, Helvetica, 黑体, Arial, Tahoma;
+}
