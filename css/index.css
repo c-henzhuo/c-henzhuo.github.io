@@ -1,0 +1,68 @@
+.onload { width: 100%;height: 100%; z-index: 999;background-color: black;position: fixed; }
+.onload .load-logo { position: absolute;top: 50%;left: 50%; margin-top: -70px;}
+.onload img {width: 80px;height: 80px;margin-left: -40px;display: block;-webkit-transform: rotate(360deg);animation: rotation 2.5s linear infinite; -moz-animation: rotation 2.5s linear infinite;-webkit-animation: rotation 2.5s linear infinite;-o-animation: rotation 2.5s linear infinite;}
+.onload p { color: white;font-size: 26px;margin-left: -140px; }
+
+
+.section { position: relative; center; font: 50px "Microsoft Yahei"; color: #fff;}
+.section h3{ text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+.section h5{ text-align: center; font: 25px "Microsoft Yahei"; color: black; line-height: 60px;margin-top: 10px;}
+.section p {  font: 30px "Microsoft Yahei"; color: #fff; }
+.section2 p { position: relative; left: -120%;}
+.section3 p { position: relative; bottom: -500px;}
+.section4 p { display: none;}
+.section5 p { display: none;}
+
+.section1 h3 {margin-bottom: 50px;}
+.section1 p {text-align: center;}
+
+.section2 .m-photo {width: 200px;height: 200px;margin: 0 auto 30px;}
+.section2 img {width: 200px;height: 200px;border-radius: 100px;}
+.section2 p {font-size: 20px; text-indent: 3rem;width: 980px;margin: 0 auto;}
+
+.section3 .content {width: 980px;margin: 0 auto;}
+.section3 p {margin: 20px auto 0;font-size: 21px; }
+
+.section4 h3 { margin-bottom: 70px; }
+.section4 .card-deck { width: 1200px;margin: 0 auto;}
+.section4 .card { background-color: white;color: black;margin: 0 20px 0 20px;width: 260px;display: none;float: left;}
+.section4 .card:hover { transform: scale(1.1); transition: 0.7s;}
+.section4 .card .card-img-top { width: 260px; height: 260px; overflow: hidden;}
+.section4 .card img { display: block; width: 280px;-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+.section4 .card img:hover { -webkit-filter: grayscale(0); filter: grayscale(0); }
+.section4 .card-body{height: 60px; line-height: 60px;}
+.section4 .card-footer a {font-size: 15px;text-decoration: none; border: 2px solid white; color: #fff;background-color: #373A3C;display: block;height: 30px;width: 100px; line-height: 30px;text-align: center;margin: 0 auto 10px;font-weight: 400;}
+.section4 .card-footer a:hover { background-color: #252728; border: 2px solid #9B9C9D;}
+
+.section5 p {text-align: center;font-size: 20px;margin: 10px 0 10px 0;}
+.section5 h3 > span { color: #4585F5; }
+.section5 .span1 { color: #E3723C; }
+.section5 .span2 { color: #84C800; }
+.section5 .span3 { color: #33CCFF; }
+.section5 .span4 { color: #9E966E; }
+.section5 .contact-way { width: 370px;height: 50px;margin: 30px auto; }
+.section5 .contact-way ul { padding-left: 0; }
+.section5 .contact-way li { display: block; float: left;display: block;width: 50px;height: 50px; border-radius: 100%;margin-left: 20px;  }
+.section5 img { width: 30px;height: 30px;margin: 10px 0 0 10px; }
+
+
+.section4 { background: url(http://demo.cssmoban.com/cssthemes4/tpmo_506_tinker/img/about-bg.jpg) 50%;}
+/*.section3 { background: url(http://demo.cssmoban.com/cssthemes4/btst_56_FlatfyTheme/img/intro/intro5.jpg) 50%;}*/
+.section5 { background: url(http://demo.cssmoban.com/cssthemes4/sbtp_17_bluepage/img/slider/banner.jpg) 50%;}
+
+.bg1 { position: absolute;bottom: 0; left: 0; z-index: -10; }
+
+#fp-nav span {border: none!important ;}
+#fp-nav { _display: none!important; font-size: 12px!important;}
+#fp-nav li { width: 90px!important; height: 25px!important; margin: 15px 0 0!important; vertical-align: middle!important;}
+#fp-nav li a { float: right!important; width: 21px!important; height: 21px!important; color: #8F9DA4!important; text-decoration: none!important; text-align: right; background: url(http://www.dowebok.com/demo/2014/97/images/dot.png) 5px 5px no-repeat!important;}
+#fp-nav li .active { background-position: 0 bottom!important;}
+#fp-navspan { display: none!important;}
+#fp-nav ul li a.active span {background: none!important;}
+#fp-nav ul li a span {background: none!important;}
+
+.music-btn { width: 120px;height: 60px;background: rgba(0, 0 , 0 ,0.5);position: fixed;top: 8%;left: 5%;z-index: 10;border-radius: 10px;cursor: pointer;}
+.music-btn img { margin: 5px 0 0 10px;float: left;}
+.music-btn span { width: 30px;height: 30px;display: block;float: left; background-image: url(../images/暂停.png);background-size: cover;margin: 15px 0 0 15px;}
+@-webkit-keyframes rotation{ from {-webkit-transform: rotate(0deg);} to {-webkit-transform: rotate(360deg);}}
+.music-btn .Rotation {-webkit-transform: rotate(360deg);animation: rotation 3s linear infinite;-moz-animation: rotation 3s linear infinite;-webkit-animation: rotation 3s linear infinite;-o-animation: rotation 3s linear infinite;}
